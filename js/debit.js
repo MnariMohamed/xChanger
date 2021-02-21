@@ -1,6 +1,6 @@
 console.log("in debit");
 function showDebit(username) {
-    fetch('http://xchanger-addon.herokuapp.com/debit_status/tik')
+    fetch('http://xchanger-addon.herokuapp.com/debit_status/'+username)
     .then(response => response.json())
     .then(data =>{
         let h4=document.createElement("h4");
